@@ -1,0 +1,1 @@
+https://marcintomaszewski.github.io/losowanie-cytat-w/
