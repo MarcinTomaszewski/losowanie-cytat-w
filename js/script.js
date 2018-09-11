@@ -22,12 +22,12 @@ function getJoke() {    //pobieranie losowego dowcipu
     success: createTweet
 });*/
 
-//var prefix = "https://cors-anywhere.herokuapp.com/";            //??????????
+var prefix = "https://cors-anywhere.herokuapp.com/";            //??????????
 var tweetLink = "https://twitter.com/intent/tweet?text=";       //link do wysyłania tweetów na Tweetera. Po znaku = będzie dodana treść tweeta.
 var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";    //link do API Quotes on Design, które pozwala pobierać losowe cytaty ze swojej bazy.
 
 function getQuote(){   
-    //$.getJSON(prefix + quoteUrl);       //?????????
+    $.getJSON(prefix + quoteUrl);       //?????????
     $.ajaxSetup({ cache: false });        //???????????            
     $.getJSON(quoteUrl, createTweet);   //skrócona metoda $.getJSON() odpowiadająca metodzie $.ajax(). W parametrach nie trzeba podawać dataType i data sa domyślnie ustawione 
                                                                       
